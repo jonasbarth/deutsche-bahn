@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<timetable station='Berlin Hbf'>
+    <s id="1558879429275564094-2201202006-12">
+        <!-- id is the id of the train -->
+        <tl f="N" t="p" o="OWRE2" c="RE" n="63992"/>
+        <!-- tl=trip label, f=filter, t=trip type, c=train type, n=train number-->
+        <ar pt="2201202134" pp="12" l="2" ppth="Wittenberge|Bad Wilsnack|Gl&#246;wen|Breddin|Neustadt(Dosse)|Friesack(Mark)|Paulinenaue|Nauen|Falkensee|Berlin-Spandau|Berlin Zoologischer Garten"/>
+        <!-- ar=arrival, pt=planned arrival time, pp=planned platform, h=hidden, wings=Wing. A sequence of trip id separated by (|), ppth=planned Planned Path. A sequence of station names separated by the pipe symbols ("|”). -->
+        <dp pt="2201202135" pp="12" l="2" ppth="Berlin Friedrichstra&#223;e|Berlin Alexanderplatz|Berlin Ostkreuz|K&#246;nigs Wusterhausen|Brand Tropical Islands|L&#252;bben(Spreewald)|L&#252;bbenau(Spreewald)|Raddusch|Vetschau|Cottbus Hbf"/>
+        <!-- dp=departure, pp=planned platform wings=Wing. A sequence of trip id separated by (|), ppth=planned Planned Path. A sequence of station names separated by the pipe symbols ("|”).
+        For arrival, the path indicates the stations that
+come before the current station. The first element then is the trip’s start station.
+For departure, the path indicates the stations
+that come after the current station. The last element in the path then is the trip’s destination
+station.
+Note that the current station is never included in
+the path (neither for arrival nor for departure).-->
+    </s>
+    <s id="2121877044531283563-2201202109-2">
+        <tl f="F" t="p" o="80" c="ICE" n="840"/>
+        <ar pt="2201202116" pp="14" hi="1" ppth="Berlin Ostbahnhof"/>
+        <dp pt="2201202120" pp="14" ppth="Berlin-Spandau|Stendal Hbf|Wolfsburg Hbf|Hannover Hbf"/>
+    </s>
+    <s id="1529246190659779383-2201202059-6"> <!-- referenced in fchg and rchg -->
+        <tl f="N" t="p" o="800154" c="RB" n="18634"/>
+        <ar pt="2201202135" pp="14" l="14" ppth="Flughafen BER - Terminal 1-2|Berlin Ostkreuz|Berlin Ostbahnhof|Berlin Alexanderplatz|Berlin Friedrichstra&#223;e"/>
+        <dp pt="2201202137" pp="14" l="14" ppth="Berlin Zoologischer Garten|Berlin-Charlottenburg|Berlin-Spandau|Albrechtshof|Seegefeld|Falkensee|Finkenkrug|Brieselang|Nauen"/>
+    </s>
+    <s id="-5511541014003594580-2201201651-11">
+        <tl f="F" t="p" o="80" c="ICE" n="643"/>
+        <ar pt="2201202109" pp="12" ppth="D&#252;sseldorf Hbf|D&#252;sseldorf Flughafen|Duisburg Hbf|Essen Hbf|Bochum Hbf|Dortmund Hbf|Hamm(Westf)Hbf|Bielefeld Hbf|Hannover Hbf|Berlin-Spandau"/>
+        <dp pt="2201202113" pp="12" hi="1" ppth="Berlin Ostbahnhof"/>
+    </s>
+    <s id="-4250665615017605966-2201202034-10">
+        <tl f="N" t="p" o="800154" c="RE" n="3192"/>
+        <ar pt="2201202139" pp="13" l="1" ppth="Frankfurt(Oder)|F&#252;rstenwalde(Spree)|Hangelsberg|Fangschleuse|Erkner|Berlin Ostkreuz|Berlin Ostbahnhof|Berlin Alexanderplatz|Berlin Friedrichstra&#223;e"/>
+        <dp pt="2201202141" pp="13" l="1" ppth="Berlin Zoologischer Garten|Berlin-Charlottenburg|Berlin Wannsee|Potsdam Hbf|Potsdam Charlottenhof|Potsdam Park Sanssouci|Werder(Havel)|Gro&#223; Kreutz|G&#246;tz|Brandenburg Hbf|Kirchm&#246;ser|Wusterwitz|Genthin"/>
+    </s>
+    <s id="-8455188103860481877-2201202008-12">
+        <tl f="N" t="p" o="800154" c="RE" n="3733"/>
+        <ar pt="2201202113" pp="13" l="7" ppth="W&#252;nsdorf-Waldstadt|Zossen|Dabendorf|Rangsdorf|Dahlewitz|Blankenfelde(Teltow-Fl&#228;ming)|Flughafen BER - Terminal 1-2|Berlin Ostkreuz|Berlin Ostbahnhof|Berlin Alexanderplatz|Berlin Friedrichstra&#223;e"/>
+        <dp pt="2201202115" pp="13" l="7" ppth="Berlin Zoologischer Garten|Berlin-Charlottenburg|Berlin Wannsee|Potsdam Medienstadt Babelsberg|Potsdam-Rehbr&#252;cke|Wilhelmshorst|Michendorf|Seddin|Beelitz-Heilst&#228;tten|Borkheide|Br&#252;ck(Mark)|Baitz|Bad Belzig|Wiesenburg(Mark)|Medewitz(Mark)|Jeber-Bergfrieden|Ro&#223;lau(Elbe)|Dessau Hbf"/>
+    </s>
+    <s id="-157208555968192668-2201201648-8">
+        <tl f="F" t="p" o="80" c="ICE" n="653"/>
+        <ar pt="2201202109" pp="12" wings="-5511541014003594580-2201201651" ppth="K&#246;ln Hbf|Wuppertal Hbf|Hagen Hbf|Hamm(Westf)Hbf|Bielefeld Hbf|Hannover Hbf|Berlin-Spandau"/>
+        <dp pt="2201202113" pp="12" hi="1" wings="-5511541014003594580-2201201651" ppth="Berlin Ostbahnhof"/>
+    </s>
+    <s id="6170002538724052342-2201201413-17">
+        <tl f="F" t="p" o="80" c="ICE" n="276"/>
+        <ar pt="2201202127" pp="11" ppth="Basel SBB|Basel Bad Bf|Freiburg(Breisgau) Hbf|Offenburg|Baden-Baden|Karlsruhe Hbf|Mannheim Hbf|Frankfurt(Main)Hbf|Hanau Hbf|Fulda|Kassel-Wilhelmsh&#246;he|G&#246;ttingen|Hildesheim Hbf|Braunschweig Hbf|Wolfsburg Hbf|Berlin-Spandau"/>
+        <dp pt="2201202131" pp="11" hi="1" ppth="Berlin Ostbahnhof"/>
+    </s>
+    <s id="2408273976333163763-2201202026-11">
+        <tl f="N" t="p" o="800154" c="RE" n="3197"/>
+        <ar pt="2201202120" pp="11" l="1" ppth="Brandenburg Hbf|G&#246;tz|Gro&#223; Kreutz|Werder(Havel)|Potsdam Park Sanssouci|Potsdam Charlottenhof|Potsdam Hbf|Berlin Wannsee|Berlin-Charlottenburg|Berlin Zoologischer Garten"/>
+        <dp pt="2201202123" pp="11" l="1" ppth="Berlin Friedrichstra&#223;e|Berlin Alexanderplatz|Berlin Ostbahnhof|Berlin Ostkreuz"/>
+    </s>
+    <s id="-458114474131267980-2201202029-10">
+        <tl f="N" t="p" o="800154" c="RB" n="18637"/>
+        <ar pt="2201202115" pp="11" l="14" ppth="Nauen|Brieselang|Finkenkrug|Falkensee|Seegefeld|Albrechtshof|Berlin-Spandau|Berlin-Charlottenburg|Berlin Zoologischer Garten"/>
+        <dp pt="2201202117" pp="11" l="14" ppth="Berlin Friedrichstra&#223;e|Berlin Alexanderplatz|Berlin Ostbahnhof|Berlin Ostkreuz|Flughafen BER - Terminal 1-2"/>
+    </s>
+    <s id="-3601768012472535807-2201202008-14">
+        <tl f="N" t="p" o="800154" c="RE" n="3133"/>
+        <ar pt="2201202149" pp="12" l="1" ppth="Magdeburg Hbf|Magdeburg-Neustadt|Burg(Magdeburg)|G&#252;sen(b Genthin)|Genthin|Wusterwitz|Kirchm&#246;ser|Brandenburg Hbf|Werder(Havel)|Potsdam Hbf|Berlin Wannsee|Berlin-Charlottenburg|Berlin Zoologischer Garten"/>
+        <dp pt="2201202151" pp="12" l="1" pde="Cottbus Hbf" ppth="Berlin Friedrichstra&#223;e|Berlin Alexanderplatz|Berlin Ostbahnhof|Berlin Ostkreuz|Erkner|Fangschleuse|Hangelsberg|F&#252;rstenwalde(Spree)|Berkenbr&#252;ck|Briesen(Mark)|Jacobsdorf(Mark)|Pillgram|Frankfurt(Oder)"/>
+    </s>
+    <s id="5254069718021379768-2201201500-17">
+        <tl f="F" t="p" o="84" c="IC" n="149"/>
+        <ar pt="2201202123" pp="12" ppth="Amsterdam Centraal|Hilversum|Amersfoort Centraal|Apeldoorn|Deventer|Almelo|Hengelo|Bad Bentheim|Rheine|Osnabr&#252;ck Hbf|Bad Oeynhausen|Minden(Westf)|Hannover Hbf|Wolfsburg Hbf|Stendal Hbf|Berlin-Spandau"/>
+        <dp pt="2201202128" pp="12" hi="1" ppth="Berlin Ostbahnhof"/>
+    </s>
+    <s id="3706325966550668864-2201202001-10">
+        <tl f="N" t="p" o="OWRE2" c="RE" n="63991"/>
+        <ar pt="2201202124" pp="13" l="2" ppth="Cottbus Hbf|Vetschau|L&#252;bbenau(Spreewald)|L&#252;bben(Spreewald)|Brand Tropical Islands|K&#246;nigs Wusterhausen|Berlin Ostkreuz|Berlin Alexanderplatz|Berlin Friedrichstra&#223;e"/>
+        <dp pt="2201202125" pp="13" l="2" ppth="Berlin Zoologischer Garten|Berlin-Spandau|Falkensee|Nauen|Paulinenaue|Friesack(Mark)|Neustadt(Dosse)|Breddin|Gl&#246;wen|Bad Wilsnack|Wittenberge|Karst&#228;dt|Grabow(Meckl)|Ludwigslust|L&#252;blow(Meckl)|Rastow|S&#252;lstorf|Holthusen|Schwerin S&#252;d|Schwerin Mitte|Schwerin Hbf|L&#252;bstorf|Bad Kleinen|Dorf Mecklenburg|Wismar"/>
+    </s>
+    <s id="-338883585700876162-2201202005-18">
+        <tl f="N" t="p" o="800154" c="RE" n="3736"/>
+        <ar pt="2201202144" pp="11" l="7" ppth="Dessau Hbf|Ro&#223;lau(Elbe)|Jeber-Bergfrieden|Wiesenburg(Mark)|Bad Belzig|Baitz|Br&#252;ck(Mark)|Borkheide|Beelitz-Heilst&#228;tten|Seddin|Michendorf|Wilhelmshorst|Potsdam-Rehbr&#252;cke|Potsdam Medienstadt Babelsberg|Berlin Wannsee|Berlin-Charlottenburg|Berlin Zoologischer Garten"/>
+        <dp pt="2201202146" pp="11" l="7" ppth="Berlin Friedrichstra&#223;e|Berlin Alexanderplatz|Berlin Ostbahnhof|Berlin Ostkreuz|Flughafen BER - Terminal 1-2|Blankenfelde(Teltow-Fl&#228;ming)|Dahlewitz|Rangsdorf|Dabendorf|Zossen|W&#252;nsdorf-Waldstadt"/>
+    </s>
+    <s id="-4791399035069659784-2201201941-14">
+        <tl f="N" t="p" o="800154" c="RE" n="3136"/>
+        <ar pt="2201202109" pp="14" l="1" ppth="Eisenh&#252;ttenstadt|Frankfurt(Oder)|Pillgram|Jacobsdorf(Mark)|Briesen(Mark)|Berkenbr&#252;ck|F&#252;rstenwalde(Spree)|Fangschleuse|Erkner|Berlin Ostkreuz|Berlin Ostbahnhof|Berlin Alexanderplatz|Berlin Friedrichstra&#223;e"/>
+        <dp pt="2201202111" pp="14" l="1" ppth="Berlin Zoologischer Garten"/>
+    </s>
+</timetable>
